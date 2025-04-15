@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankti Mevada - AI Assistant</title>
+    <link rel="icon" type="image/x-icon" href="../assets/headshot.jpg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Chatbot Widget Button -->
+    <div id="chatbot-widget-button" class="chatbot-widget-button">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <!-- Chatbot Popup Container -->
+    <div id="chatbot-popup" class="chatbot-popup">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>AI Assistant</h2>
+                <p>Powered by Google Gemini</p>
+                <button id="close-chat-button" class="close-chat-button">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi there! I'm Pankti's AI assistant powered by Google Gemini. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <textarea id="user-input" placeholder="Type your message here..." rows="1"></textarea>
+                <button id="send-button" class="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="chat-footer">
+                <p>This AI assistant uses Google Gemini to provide information about Pankti Mevada and her work.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
